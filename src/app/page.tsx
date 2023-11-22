@@ -1,11 +1,12 @@
+import Paragraph from '@/component/ui/Paragraph'
 import { Button } from '@mui/material'
 import Image from 'next/image'
 
 export default function Home() {
   return(
     <div>
-      <p> I am a header</p>
-    <Button>Click me</Button>
+      <Paragraph> I am a header</Paragraph>
+      <Button>Click me</Button>
  </div>
   )
 }

@@ -1,22 +1,22 @@
-import { getServerSession } from 'next-auth'
 import Link from 'next/link'
-import { cn } from '@/lib/utils'
 import SignInButton from './SignInButton'
 import SignOutButton from './SignOutButton'
 import { buttonVariants } from './ui/Button'
+
 import { ToggleThemeButton } from './ToggleThemeButton'
-// import { authOptions } from '@/lib/auth'
 
 const Navbar = async () => {
-  // const session = await getServerSession(authOptions)
-   const session  = true
+
+  // const session = await getServerSession()
+const session = true
+
    return (
     <div className='fixed backdrop-blur-sm bg-slate-200/75 dark:bg-slate-900/75 z-50 top-0 left-0 mb-20 right-0 h-20 shadow-sm flex items-center justify-between'>
       <div className='container max-w-7xl mx-auto w-full flex justify-between items-center'>
         
-        <Link href='/' className={buttonVariants({ variant: 'link' })}>
-          Text Similarity v1.0
-        </Link>
+      <Link href='/' passHref>
+      Logo
+    </Link>
 
         <div className='md:hidden'>
           <ToggleThemeButton />
@@ -30,7 +30,7 @@ const Navbar = async () => {
             Documentation
           </Link>
 
-           {/* {session ? (
+           {session ? (
             <>
               <Link
                 className={buttonVariants({ variant: 'ghost' })}
@@ -41,7 +41,7 @@ const Navbar = async () => {
             </>
            ) : (
             <SignInButton />
-          )}  */}
+          )} 
 
         </div>
 
