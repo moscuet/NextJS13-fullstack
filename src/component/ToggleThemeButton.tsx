@@ -21,10 +21,6 @@ export function ToggleThemeButton() {
     }
   };
   
-  useEffect(() => {
-    console.log("Current theme:", theme);
-  }, [theme]); 
-  
     return (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
