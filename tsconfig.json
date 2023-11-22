@@ -31,8 +31,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "C:\\Users\\Josch\\Desktop\\similarity-api\\.next/types/**/*.ts"
+    ".next/types/**/*.ts", "src/lib/auth.text", "src/lib/db.text",
   ],
   "exclude": ["node_modules"]
 }
