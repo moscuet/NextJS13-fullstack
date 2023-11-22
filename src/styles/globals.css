@@ -4,13 +4,13 @@
 
 .img-shadow {
   width: 250px;
-  -webkit-filter: drop-shadow(5px 10px 5px #b0e0e6);
-  filter: drop-shadow(5px 10px 5px #b0e0e6);
+  -webkit-filter: drop-shadow(2px 4px 2px #678893);
+  filter: drop-shadow(2px 4px 2px #678893);
 }
 
 .dark .img-shadow {
-  -webkit-filter: drop-shadow(5px 10px 5px #ffd700);
-  filter: drop-shadow(5px 10px 5px #ffd700);
+  -webkit-filter: drop-shadow(2px 4px 2px #678893);
+  filter: drop-shadow(2px 4px 2px #678893);
 }
 
 .dark .simplebar-scrollbar::before {
@@ -22,7 +22,7 @@
 }
 
 .dark .three-d {
-  text-shadow: 0px 5px 0px #deb887;
+  text-shadow: 0px 3px 0px #deb887;
 }
 
 body {

@@ -26,7 +26,7 @@ module.exports = {
       },
       colors: {
         'light-indigo': '#6366F1',
-        'dark-indigo': '#4F46E5',
+        'dark-indigo': '#C0C0C0 ',
       },
     },
   },
