@@ -6,7 +6,6 @@ import { useTheme } from 'next-themes'
 import { Button } from './ui/Button'
 import Icons from './Icons'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/DropDownMenu'
-import { useEffect } from 'react'
 
 export function ToggleThemeButton() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -20,10 +19,6 @@ export function ToggleThemeButton() {
       return <Icons.Sun />;
     }
   };
-  
-  useEffect(() => {
-    console.log("Current theme:", theme);
-  }, [theme]); 
   
     return (
       <DropdownMenu>
