@@ -9,12 +9,13 @@ export const metadata: Metadata = {
   description: 'Free & open-source text similarity API',
 }
 
+// style={{border:'1px solid red'}} 
 
 export default function Home() {
   return (
     <div className='relative h-screen flex items-center justify-center overflow-x-hidden'>
       <div className='container pt-32 max-w-7xl w-full mx-auto h-full px-4 lg:px-0'>
-        <div className='flex flex-col lg:flex-row items-center justify-between gap-6'>
+        <div className='flex flex-col lg:flex-row lg:px-5 items-center justify-between gap-6'>
 
           <div className='w-full lg:w-1/2 flex flex-col items-center lg:items-start'>
             <div className='flex flex-col items-center lg:items-start'>
