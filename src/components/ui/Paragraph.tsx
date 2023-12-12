@@ -2,7 +2,7 @@ import * as React from 'react';
 import { VariantProps, cva } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
-export const paragraphVariants = cva('max-w-prose new-text-color mb-2 text-center', {
+export const paragraphVariants = cva('max-w-prose new-text-color mb-2 lg:text-left text-center', {
   variants: {
     size: {
       default: 'text-base sm:text-lg',

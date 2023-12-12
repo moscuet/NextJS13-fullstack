@@ -25,7 +25,7 @@ const session = true
         <div className='hidden md:flex gap-4'>
           <ToggleThemeButton /> 
           <Link
-            href='/documentation'
+            href='/documentations'
             className={buttonVariants({ variant: 'ghost' })}>
             Documentation
           </Link>
