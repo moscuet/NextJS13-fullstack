@@ -6,20 +6,17 @@ import { nodejs, php, python } from '@/const/code-snippet'
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 
-interface DocumentationTabsProps {
-
-}
 
 const DocumentationTabs: FC = () => {
-    return <Tabs className='max-w-2xl w-full lg:text-left text-center'>
-        <TabsList>
+    return <Tabs  className='w-full lg:text-left text-center'>
+        <TabsList className='pl-0'>
             <TabsTrigger value={'nodejs'}> Node JS</TabsTrigger>
             <TabsTrigger value={'php'}> Php</TabsTrigger>
             <TabsTrigger value={'python'}> Python</TabsTrigger>
         </TabsList>
         <TabsContent value={'nodejs'}>
             <SimpleBar>
-            <CodeSnippet animated CodeSnippet={php} language={'nodejs'} show></CodeSnippet>
+            <CodeSnippet animated CodeSnippet={nodejs} language={'nodejs'} show></CodeSnippet>
             </SimpleBar>
       </TabsContent>
         <TabsContent value={'php'}>
@@ -29,7 +26,7 @@ const DocumentationTabs: FC = () => {
       </TabsContent>
         <TabsContent value={'python'}>
             <SimpleBar>
-            <CodeSnippet animated CodeSnippet={php} language={'python'} show></CodeSnippet>
+            <CodeSnippet animated CodeSnippet={python} language={'python'} show></CodeSnippet>
             </SimpleBar>
       </TabsContent>
     </Tabs> 
