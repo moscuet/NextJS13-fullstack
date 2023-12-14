@@ -6,9 +6,9 @@ import DocumentationTabs from '@/components/DocumentationTabs'
 
 
 export const metadata: Metadata = {
-    title: 'documentations',
-    description: ' Dcoumention of Similarity API'
-}
+    title: 'Similarity API | Documentations',
+    description: 'Text similarity API',
+  }
 
 
 const page: FC = () => {

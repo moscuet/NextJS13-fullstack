@@ -5,9 +5,9 @@ import { cva, VariantProps } from 'class-variance-authority';
 const headingVariants = cva('new-heading-color text-center lg:text-left mb-3 font-extrabold leading-tight tracking-tighter', {
     variants: {
         size: {
-            default: 'text-3xl md:text-3xl lg:text-4xl',
-            lg: 'text-3xl md:text-4xl lg:text-5xl',
-            sm: 'text-xl md:text-2xl lg:text-3xl',
+            default: 'text-xl md:text-2xl lg:text-3xl',
+            lg: 'text-xl md:text-2xl lg:text-3xl',
+            sm: 'text-lg md:text-xl lg:text-2xl',
         },
     },
     defaultVariants: {
