@@ -4,11 +4,12 @@ import SignOutButton from './SignOutButton'
 import { buttonVariants } from './ui/Button'
 
 import { ToggleThemeButton } from './ToggleThemeButton'
+import { getServerSession } from 'next-auth'
+import { authOptions } from '@/lib/auth'
 
 const Navbar = async () => {
 
-  // const session = await getServerSession()
-const session = true
+  const session = await getServerSession(authOptions)
 
    return (
     <div className='fixed backdrop-blur-sm bg-slate-200/75 dark:bg-slate-900/75 z-50 top-0 left-0 mb-20 right-0 h-20 shadow-sm flex items-center justify-between'>

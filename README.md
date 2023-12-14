@@ -42,6 +42,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
+## nextAuth.js
+https://next-auth.js.org/getting-started/example 
+database using Prisma Client: https://app.planetscale.com
+
+
 ## Color scheme
 
 Light Mode (Default):

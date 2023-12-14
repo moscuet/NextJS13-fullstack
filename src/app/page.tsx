@@ -6,7 +6,7 @@ import Paragraph from '@/components/ui/Paragraph'
 
 export const metadata: Metadata = {
   title: 'Similarity API | Home',
-  description: 'Free & open-source text similarity API',
+  description: 'Text similarity API',
 }
 
 
