@@ -49,20 +49,33 @@ export const authOptions: NextAuthOptions = {
         where: {
           email: token.email,
         },
-      })
-
+      });
+    
       if (!dbUser) {
-        token.id = user!.id
-        return token
+        const newUser = await db.user.create({
+          data: {
+            email: token.email,
+            name: token.name,
+            id: token.id,
+            image: token.picture,
+          },
+        });
       }
-
-      return {
-        id: dbUser.id,
-        name: dbUser.name,
-        email: dbUser.email,
-        picture: dbUser.image,
+    
+      token.customClaim = 'some_value';
+    
+      if (dbUser) {
+        return {
+          id: dbUser.id,
+          name: dbUser.name,
+          email: dbUser.email,
+          picture: dbUser.image,
+        };
       }
-    },
+    
+      return token;
+    }
+    ,
     redirect() {
       return '/dashboard'
     },
