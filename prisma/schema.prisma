@@ -5,9 +5,12 @@ datasource db {
   relationMode = "prisma"
 }
 
+// Prisma is an Object-Relational Mapping (ORM) tool that allows you to interact with your database using a type-safe, high-level query API. To use Prisma in your JavaScript or TypeScript application, you need a Prisma client. The generator block specifies how Prisma should generate this client code.
+
 generator client {
   provider = "prisma-client-js"
 }
+
 
 model Account {
   id                String  @id @default(cuid())
@@ -22,7 +25,8 @@ model Account {
   scope             String?
   id_token          String? @db.Text
   session_state     String?
-
+// The userId field in the Account model corresponds to the id field in the User mode
+// Cascade: if a record in User model is deleted, all associated records in the Account model will also be deleted automatically
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])

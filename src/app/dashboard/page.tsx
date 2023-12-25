@@ -1,18 +1,34 @@
-import { FC } from 'react'
+import { authOptions } from '@/lib/auth'
+import { db } from '@/lib/db'
+import { getServerSession } from 'next-auth'
 
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import ApiKeyRequestComp from '@/components/ApiKeyRequestComp'
 
 export const metadata: Metadata = {
-    title: 'Similarity API | Dashboard',
-    description: 'Text similarity API',
-  }
-
-interface pageProps {
-  
+  title: 'Similarity API | Dashboard',
+  description: 'Free & open-source text similarity API',
 }
 
-const page: FC<pageProps> = ({}) => {
-  return <div> dashboard page</div>
+const page = async () => {
+  const user = await getServerSession(authOptions)
+  if (!user) return notFound()
+
+  const apiKey = await db.apiKey.findFirst({
+    where: { userId: user.user.id, enabled: true },
+  })
+
+  return (
+     <div className='container max-w-7xl w-full mx-auto h-full'>
+      {apiKey ? 
+      // @ts-expect-error Server Component
+        <ApiDashboard />
+       : 
+        <ApiKeyRequestComp />
+      }
+    </div>
+  )
 }
 
 export default page
