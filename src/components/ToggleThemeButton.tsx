@@ -7,10 +7,14 @@ import { Button } from './ui/Button'
 import Icons from './Icons'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/DropDownMenu'
 
-export function ToggleThemeButton() {
+export default function  ToggleThemeButton() {
   const { theme, setTheme, systemTheme } = useTheme();
 
   const renderIcon = () => {
+    if (!theme) {
+      return null;
+    }
+
     if (theme === 'system') {
       return <Icons.Laptop />;
     } else if (theme === 'dark') {

@@ -3,9 +3,13 @@ import SignInButton from './SignInButton'
 import SignOutButton from './SignOutButton'
 import { buttonVariants } from './ui/Button'
 
-import { ToggleThemeButton } from './ToggleThemeButton'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
+
+
+import dynamic from 'next/dynamic';
+
+const ToggleThemeButton = dynamic(() => import('./ToggleThemeButton'),{ ssr: false });
 
 const Navbar = async () => {
 
