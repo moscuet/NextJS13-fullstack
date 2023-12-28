@@ -3,8 +3,8 @@
 import * as React from 'react'
 import { useTheme } from 'next-themes'
 
-import { Button } from './ui/Button'
-import Icons from './Icons'
+import { Button } from '@/ui/Button'
+import Icons from '@/components/Icons'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/DropDownMenu'
 
 export default function  ToggleThemeButton() {

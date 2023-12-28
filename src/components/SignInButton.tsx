@@ -2,8 +2,8 @@
 
 import { FC, useState } from 'react'
 import {signIn} from 'next-auth/react'
-import { Button } from './ui/Button'
-import { toast } from './ui/Toast'
+import { Button } from '@/ui/Button'
+import { toast } from '@/ui/Toast'
 interface SignInButtonProps {
   
 }
