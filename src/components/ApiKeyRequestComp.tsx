@@ -3,12 +3,12 @@
 import { FC, useState } from 'react'
 import { Key } from 'lucide-react'
 import { generateApiKey } from '@/helpers/generateApiKey'
-import { toast } from './ui/Toast'
-import LargeHeading from './LargeHeading'
-import Paragraph from './ui/Paragraph'
-import { Button } from './ui/Button'
-import CopyButton from './CopyButton'
-import { Input } from './ui/Input'
+import { toast } from '@/ui/Toast'
+import LargeHeading from '@/components/LargeHeading'
+import Paragraph from '@/ui/Paragraph'
+import { Button } from '@/ui/Button'
+import CopyButton from '@/components/CopyButton'
+import { Input } from '@/ui/Input'
 
 interface RequestApiKeyProps {}
 

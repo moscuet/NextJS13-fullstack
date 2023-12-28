@@ -5,6 +5,7 @@ import { getServerSession } from 'next-auth'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import ApiKeyRequestComp from '@/components/ApiKeyRequestComp'
+import ApiDashboard from '@/components/ApiDashboard'
 
 export const metadata: Metadata = {
   title: 'Similarity API | Dashboard',
@@ -22,7 +23,6 @@ const page = async () => {
   return (
      <div className='container max-w-7xl w-full mx-auto h-full'>
       {apiKey ? 
-      // @ts-expect-error Server Component
         <ApiDashboard />
        : 
         <ApiKeyRequestComp />

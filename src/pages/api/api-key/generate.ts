@@ -14,10 +14,7 @@ const handler = async (
     try {
         const user = await getServerSession(request, response, authOptions).then(response => response?.user)
         if (!user) {
-            return response.status(400).json({
-                generatedApiKey: null,
-                error: 'Invalid user'
-            })
+            return response.status(404).json({ generatedApiKey: null, error: 'Invalid user' })
         }
         const currentApiKey = await db.apiKey.findFirst({
             where: { userId: user.id, enabled: true }
