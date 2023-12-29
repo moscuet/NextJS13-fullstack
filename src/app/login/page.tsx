@@ -10,7 +10,7 @@ const page: FC = () => {
   return (
     <>
      <div className='container max-w-7xl w-full mx-auto h-full'>
-          <div className='flex flex-col items-center gap-6 text-center'>
+          <div className='flex flex-col items-center mb-5 gap-6 text-center'>
             <Link
               className={buttonVariants({
                 variant: 'ghost',
@@ -22,7 +22,7 @@ const page: FC = () => {
             </Link>
 
             <LargeHeading>Welcome back!</LargeHeading>
-            <Paragraph>Please sign in using your Google account.</Paragraph>
+            <Paragraph>Please sign in using your Google account</Paragraph>
           </div>
           <GoogleAuthForm />
         </div>
