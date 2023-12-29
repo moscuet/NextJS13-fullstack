@@ -4,11 +4,9 @@ import { FC, useState } from 'react'
 import {signIn} from 'next-auth/react'
 import { Button } from '@/ui/Button'
 import { toast } from '@/ui/Toast'
-interface SignInButtonProps {
-  
-}
 
-const SignInButton: FC<SignInButtonProps> = ({}) => {
+
+const SignInButton: FC = () => {
 
     const [isLoading, setIsLoading] = useState<boolean>(false)
    const  signInWithGoogle = async () =>{
