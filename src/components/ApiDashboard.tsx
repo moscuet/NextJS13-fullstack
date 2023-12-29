@@ -12,22 +12,23 @@ import ApiKeyOptions from '@/components/APIKeyOptions'
 const ApiDashboard = async ({}) => {
   const user = await getServerSession(authOptions)
   if (!user) return notFound()
-
   const apiKeys = await db.apiKey.findMany({
     where: { userId: user.user.id },
   })
 
-  const activeApiKey = apiKeys.find((key) => key.enabled)
+
+  const allApiKeys = await db.apiKey.findMany({where:{
+    userId:user.user.id
+  }});
+  
+  const allApiRequests = await db.apiRequest.findMany();
+ 
+
+const activeApiKey = apiKeys.find((key) => key.enabled)
 
   if (!activeApiKey) return notFound()
-
-  const userRequests = await db.apiRequest.findMany({
-    where: {
-      apiKeyId: {
-        in: apiKeys.map((key) => key.id),
-      },
-    },
-  })
+  
+  const userRequests = await db.apiRequest.findMany()
 
   const serializableRequests = userRequests.map((req) => ({
     ...req,
