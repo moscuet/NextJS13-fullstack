@@ -5,6 +5,7 @@ import Navbar from '@/components/NavBar'
 import { Toaster } from '@/components/ui/Toast'
 import Providers from '@/components/Providers'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
@@ -12,13 +13,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
   return (
     <html
       lang='en'
       className={cn('bg-light-blue-100 text-gray-800 antialiased', inter.className)}>
       <body className='min-h-screen pt-20 px-4 bg-cream-200 dark:bg-dark-slate-800 antialiased'>
         <Providers>
-          <Navbar />
+          <Navbar  />
           <Toaster position='bottom-right' />
           {/* <MobileMenu /> */}
           {children}

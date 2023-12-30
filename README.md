@@ -11,7 +11,7 @@ This [Next.js](https://nextjs.org/) project is bootstrapped with [`create-next-a
 - **Authentication**: Authentication: Implemented via next-auth with Google Authentication.
 - **OpenAI Integration**: Incorporates OpenAI for advanced text analysis.
 - **Redis with Upstash**: Uses Upstash Redis for effective rate limiting and caching.
-- **UI/UX Design**: Crafted with `@mui/material`, `@emotion/react`, and Tailwind CSS for an interactive and responsive interface.
+- **UI/UX Design**: Crafted with `@mui/material`, `@eradix-ui`, and Tailwind CSS for an interactive and responsive interface.
 - **Animation and Styling**: Enhanced with Framer Motion and Tailwind CSS Animate.
 - **Font Optimization**: Employs `next/font` for optimized font handling.
 
