@@ -6,7 +6,7 @@ import DocumentationTabs from '@/components/DocumentationTabs'
 
 
 export const metadata: Metadata = {
-    title: 'Similarity API | Documentations',
+    title: 'Text Similarity API | Documentations',
     description: 'Text similarity API',
   }
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const page: FC = () => {
     return <div className='container max-w-7xl w-full mx-auto h-full'>
         <LargeHeading>Making API Request</LargeHeading>
-        <Paragraph className="max-w-full">api/v1/similarity</Paragraph>
+        <Paragraph className="max-w-full">api/v1/textsimilarity</Paragraph>
         <DocumentationTabs />
 
     </div>

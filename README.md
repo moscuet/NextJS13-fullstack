@@ -1,4 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JSM Official - Text Similarity App
+
+This [Next.js](https://nextjs.org/) project is bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Features
+
+- **Next.js 14**: Utilized for creating dynamic, efficient web applications with both server-side and client-side rendering capabilities.
+- **Prisma with MySQL**: Utilizes Prisma as the database client for MySQL, ensuring robust and efficient data management.
+- **Authentication**: Implemented via `next-auth`, seamlessly integrating with the MySQL database.
+- **OpenAI Integration**: Incorporates OpenAI for advanced text analysis.
+- **Redis with Upstash**: Uses Upstash Redis for effective rate limiting and caching.
+- **UI/UX Design**: Crafted with `@mui/material`, `@emotion/react`, and Tailwind CSS for an interactive and responsive interface.
+- **Animation and Styling**: Enhanced with Framer Motion and Tailwind CSS Animate.
+- **Font Optimization**: Employs `next/font` for optimized font handling.
 
 ## Getting Started
 
@@ -13,64 +26,15 @@ pnpm dev
 # or
 bun dev
 ```
+Visit [http://localhost:3000](http://localhost:3000) for the application. Edit `app/page.tsx` for live updates.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Deploy with the [Vercel Platform](https://vercel.com/new) for optimal performance and scalability. Refer to [Next.js deployment documentation](https://nextjs.org/docs/deployment) for detailed guidance.
 
 
-### VS code extension- Tailwind CSS IntelliSense
-
-### installed package- @emotion/react @emotion/styled @mui/material @mui/system @mui/x-data-grid @next-auth/prisma-adapter @prisma/client @radix-ui/react-dropdown-menu @radix-ui/react-scroll-area @radix-ui/react-tabs @total-typescript/ts-reset @upstash/ratelimit @upstash/redis class-variance-authority clsx date-fns framer-motion lodash lucide-react nanoid next-auth next-themes openai prism-react-renderer prisma react-hot-toast sharp simplebar-react tailwind-merge zod
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+### installed package- @emotion/react @emotion/styled @mui/material @mui/system @mui/x-data-grid @next-auth/prisma-adapter @prisma/client @radix-ui/react-dropdown-menu @radix-ui/react-scroll-area @radix-ui/react-tabs @total-typescript/ts-reset @upstash/ratelimit @upstash/redis class-variance-authority clsx date-fns framer-motion lodash lucide-react nanoid next-auth next-themes openai prism-react-renderer prisma react-hot-toast sharp simplebar-react tailwind-merge zod tailwindcss postcss autoprefixer
 
 ## nextAuth.js
 https://next-auth.js.org/getting-started/example 
 database using Prisma Client: https://app.planetscale.com
-
-
-## Color scheme
-
-Light Mode (Default):
-Primary Color (Buttons, Icons, Links): indigo-500
-Secondary Color (Secondary Buttons, Accents): sky-400
-Background Color: bg-slate-50
-Paragraph Text Color: text-gray-800
-Title Color: text-slate-900
-Navbar Background: bg-white
-Navbar Text: text-slate-900
-Button Background: bg-indigo-500
-Button Text: text-white
-Hover State for Buttons: bg-indigo-600
-Hover State for Links/Icons: text-indigo-600
-Dark Mode:
-
-Primary Color (Buttons, Icons, Links): indigo-300
-Secondary Color (Secondary Buttons, Accents): sky-300
-Background Color: bg-slate-700
-Paragraph Text Color: text-gray-200
-Title Color: text-gray-100
-Navbar Background: bg-slate-800
-Navbar Text: text-gray-200
-Button Background: bg-indigo-300
-Button Text: text-slate-800
-Hover State for Buttons: bg-indigo-400
-Hover State for Links/Icons: text-indigo-400

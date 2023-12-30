@@ -9,6 +9,6 @@ export function cosineSimilarity(A: number[], B: number[]) {
     }
     mA = Math.sqrt(mA)
     mB = Math.sqrt(mB)
-    var similarity = dotproduct / (mA * mB)
-    return similarity
+    var textSimilarity = dotproduct / (mA * mB)
+    return textSimilarity
   }
