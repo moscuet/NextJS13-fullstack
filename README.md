@@ -6,7 +6,7 @@ This App is a full-stack application designed to compare and determine the simil
 
 Experience our Text Similarity API App in action! Visit the live version of the app and explore its features firsthand:
 
-[Access the Live App]([https://yourappdomain.com](https://textsimilarityapi-eight.vercel.app/))
+[Access the Live App]([https://yourappdomain.com](https://textsimilarityapi-eight.vercel.app/)
 
 ## Technical Highlights
 
