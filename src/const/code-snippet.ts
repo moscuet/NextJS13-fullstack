@@ -1,5 +1,7 @@
 export const php = `
-$url = 'https://similarityapi.com/api/v1/textsimilarity';
+
+$url = 'https://textsimilarityapi-eight.vercel.app/api/v1/similarity';
+
 $apiKey = 'YOUR_API_KEY';
 $data = [
     'text1' => 'Hello World',
@@ -31,7 +33,7 @@ export const nodejs = `const axios = require("axios");
 
 const requestOptions = {
     method: 'POST',
-    url: 'https://similarityapi.com/api/v1/textsimilarity',
+    url: 'https://textsimilarityapi-eight.vercel.app/api/v1/similarity',
     data: {
       text1: 'Hello World',
       text2: 'Hello Universe'
@@ -49,7 +51,7 @@ axios.request(requestOptions).then(function (response) {
 
 export const python = `import requests
 
-apiEndpoint = 'https://similarityapi.com/api/v1/similarity'
+apiEndpoint = 'https://textsimilarityapi-eight.vercel.app/api/v1/similarity'
 apiKey = 'YOUR_API_KEY'
 inputText1 = 'Hello World'
 inputText2 = 'Hello Universe'
