@@ -1,8 +1,5 @@
 # Text Similarity API App
-NextJs 14
-
-
-This [Next.js](https://nextjs.org/) project is bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14. It integrates Google authentication via NextAuth.js for secure and straightforward user access. The analysis is powered by OpenAI's API for sophisticated text embedding. Backend operations are managed by Prisma Client with a Planetscale database. We use Upstash Redis for performance enhancement and caching, along with implementing rate limiting to secure the server against an overload of requests. On the frontend, the application features a polished user interface with @mui/material and interactive elements from @radix-ui. 
 
 ## Features
 
