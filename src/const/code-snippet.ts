@@ -1,5 +1,7 @@
 export const php = `
+
 $url = 'https://textsimilarityapi-eight.vercel.app/api/v1/similarity';
+
 $apiKey = 'YOUR_API_KEY';
 $data = [
     'text1' => 'Hello World',
