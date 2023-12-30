@@ -6,9 +6,9 @@ import { Button } from '@/ui/Button'
 import { toast } from '@/ui/Toast'
 
 
-const SignInButton: FC = () => {
-
+const SignInButton: FC<{ isActive: boolean }> = ({ isActive }) => {
     const [isLoading, setIsLoading] = useState<boolean>(false)
+
    const  signInWithGoogle = async () =>{
      setIsLoading(true)
 
@@ -22,7 +22,7 @@ const SignInButton: FC = () => {
         })
      }
    }
-   return <Button onClick={signInWithGoogle} isLoading={isLoading}>Sign in</Button>
+   return <Button onClick={signInWithGoogle} isLoading={isLoading} isActive={isActive} >Sign in</Button>
 
 }
 

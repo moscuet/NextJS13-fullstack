@@ -22,7 +22,7 @@ const SignOutButton: FC<SignOutButtonProps> = ({ }) => {
             })
         }
     }
-    return <Button onClick={signOutGoggle} isLoading={isLoading}>Sign out</Button>
+    return <Button onClick={signOutGoggle} isLoading={isLoading} isActive={false}>Sign out</Button>
 
 }
 
