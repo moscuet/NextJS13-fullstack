@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const page: FC = () => {
     return <div className='container max-w-7xl w-full mx-auto h-full'>
         <LargeHeading>Making API Request</LargeHeading>
-        <Paragraph className="max-w-full">api/v1/textsimilarity</Paragraph>
+        <Paragraph className="max-w-full">api/v1/similarity</Paragraph>
         <DocumentationTabs />
 
     </div>
