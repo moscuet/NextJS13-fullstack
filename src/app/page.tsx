@@ -5,7 +5,7 @@ import LargeHeading from '@/components/LargeHeading'
 import Paragraph from '@/components/ui/Paragraph'
 
 export const metadata: Metadata = {
-  title: 'Similarity API | Home',
+  title: 'Text Similarity API | Home',
   description: 'Text similarity API',
 }
 
