@@ -1,5 +1,5 @@
 export const php = `
-$url = 'https://similarityapi.com/api/v1/similarity';
+$url = 'https://similarityapi.com/api/v1/textsimilarity';
 $apiKey = 'YOUR_API_KEY';
 $data = [
     'text1' => 'Hello World',
@@ -31,7 +31,7 @@ export const nodejs = `const axios = require("axios");
 
 const requestOptions = {
     method: 'POST',
-    url: 'https://similarityapi.com/api/v1/similarity',
+    url: 'https://similarityapi.com/api/v1/textsimilarity',
     data: {
       text1: 'Hello World',
       text2: 'Hello Universe'
