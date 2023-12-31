@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className='relative h-screen flex items-center justify-center overflow-x-hidden'>
+    <div className='relative z-10 h-screen flex items-center justify-center overflow-x-hidden'>
       <div className='container px-4 max-w-7xl w-full mx-auto h-full'>
-        <div  className='flex flex-col pt-6 lg:flex-row items-center justify-between gap-6'>
+        <div className='flex flex-col pt-6 lg:flex-row items-center justify-between gap-6'>
 
           <div className='w-full lg:w-1/2 flex flex-col items-center lg:items-start'>
             <div className='flex flex-col items-center lg:items-start'>
