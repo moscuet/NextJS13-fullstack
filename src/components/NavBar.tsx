@@ -18,10 +18,9 @@ const Navbar: FC = async () => {
   return (
     <div className='fixed z-50 backdrop-blur-sm  bg-slate-200/75 dark:bg-slate-900/75 top-0 left-0 mb-20 right-0 h-20 shadow-sm flex items-center justify-between'>
       <div className='container max-w-7xl mx-auto w-full flex justify-between items-center pr-2'>
-       
         <div className='flex items-center gap-8'>
           <Link href='/' passHref>
-            <span className="text-indigo-500 cursor-pointer">LOGO</span>
+            <span className="text-indigo-500 cursor-pointer">TEXT SIMILARITY API</span>
           </Link>
           <ToggleThemeButton />
         </div>
