@@ -9,7 +9,7 @@ import 'simplebar/dist/simplebar.min.css';
 
 const DocumentationTabs: FC = () => {
     return <Tabs defaultValue='nodejs' className='w-full lg:text-left text-center'>
-        <TabsList className='pl-0'>
+        <TabsList className='pl-0 mb-5 flex justify-center'>
             <TabsTrigger value={'nodejs'}> Node JS</TabsTrigger>
             <TabsTrigger value={'php'}> Php</TabsTrigger>
             <TabsTrigger value={'python'}> Python</TabsTrigger>
