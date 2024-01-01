@@ -1,23 +1,21 @@
 # Text Similarity API App
 
-This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14. It integrates Google authentication via NextAuth.js for secure and straightforward user access. The analysis is powered by OpenAI's API for sophisticated text embedding. Backend operations are managed by Prisma Client with a Planetscale database. We use Upstash Redis for performance enhancement and caching, along with implementing rate limiting to secure the server against an overload of requests. frontend UI library used:  @mui/material and  @radix-ui 
+This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14. 
+
+## Features
+- Front-End: Next.js 14, Tailwind CSS, Radix UI Primitives, next/font, Lucide Icons, Framer Motion.
+- Back-End: API Route Limiting, Sensitive Route Protection, OpenAI Integration, Redis/Upstash.
+- Database: MySQL via Prisma (Planetscale).
+- Authentication: Google Auth, API Key Management.
+- Design & UX: Material-UI, Tailwind CSS Animate, next-themes for Dark Mode.
+- Utilities: tailwind-merge, clsx, class-variance-authority.
 
 ## Live Deployment
 
-Experience our Text Similarity API App in action! Visit the live version of the app and explore its features firsthand:
+Experience our Text Similarity API App in action! Visit the live version of the app:
 
 [Access the Live App](https://textsimilarityapi-eight.vercel.app/)
 
-## Technical Highlights
-
-- **Next.js 14**: Utilized for creating dynamic, efficient web applications with both server-side and client-side rendering capabilities.
-- **Prisma with MySQL**: Utilizes Prisma as the database client for MySQ.
-- **Authentication**: Authentication: Implemented via next-auth with Google Authentication.
-- **OpenAI Integration**: Incorporates OpenAI for advanced text analysis.
-- **Redis with Upstash**: Uses Upstash Redis for effective rate limiting and caching.
-- **UI/UX Design**: Crafted with `@mui/material`, `@eradix-ui`, and Tailwind CSS for an interactive and responsive interface.
-- **Animation and Styling**: Enhanced with Framer Motion and Tailwind CSS Animate.
-- **Font Optimization**: Employs `next/font` for optimized font handling.
 
 ## Getting Started
 
@@ -27,10 +25,6 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 Visit [http://localhost:3000](http://localhost:3000) for the application. Edit `app/page.tsx` for live updates.
 
@@ -42,11 +36,3 @@ Deploy with the [Vercel Platform](https://vercel.com/new) for optimal performanc
 
 ### installed package
 @emotion/react @emotion/styled @mui/material @mui/system @mui/x-data-grid @next-auth/prisma-adapter @prisma/client @radix-ui/react-dropdown-menu @radix-ui/react-scroll-area @radix-ui/react-tabs @total-typescript/ts-reset @upstash/ratelimit @upstash/redis class-variance-authority clsx date-fns framer-motion lodash lucide-react nanoid next-auth next-themes openai prism-react-renderer prisma react-hot-toast sharp simplebar-react tailwind-merge zod tailwindcss postcss autoprefixer
-
-
-### nextAuth.js
-https://next-auth.js.org/getting-started/example 
-
-### database
-
-database using Prisma Client: https://app.planetscale.com
