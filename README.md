@@ -1,8 +1,12 @@
 # Text Similarity API App
 
-This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14.  It integrates Google authentication through NextAuth.js. Backend operations are powered by Prisma with a Planetscale database, and performance is optimized using Upstash Redis and rate limiting. The user interface combines the elegance of @mui/material with the functionality of @radix-ui.
+This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14
+Check it out at <a href="https://movie-web.app"><kbd>movie-web.app</kbd></a>. 
+[Access the Live App](https://textsimilarityapi-eight.vercel.app/)
 
-## Features
+## 🔥Features
+
+## 🛠 Tech Stack
 - Front-End: Next.js 14, Tailwind CSS, Radix UI Primitives, next/font, Lucide Icons, Framer Motion.
 - Back-End: API Route Limiting, Sensitive Route Protection, OpenAI Integration, Redis/Upstash.
 - Database: MySQL via Prisma (Planetscale).
@@ -10,23 +14,25 @@ This App is a full-stack application designed to compare and determine the simil
 - Design & UX: Material-UI, Tailwind CSS Animate, next-themes for Dark Mode.
 - Utilities: tailwind-merge, clsx, class-variance-authority.
 
-## Live Deployment
-
-Experience our Text Similarity API App in action! Visit the live version of the app:
-
-[Access the Live App](https://textsimilarityapi-eight.vercel.app/)
+##  📖 Project Story
+The app focuses on delivering a minimalistic yet powerful tool for textual analysis, ensuring user-friendly interaction and efficient performance.
 
 
-## Getting Started
+## ⚠️ Limitations
+-  request limit 10/hour
+-  only google authentication available now
 
-First, run the development server:
+
+# 🧬 Running locally for development
+
+First clone the repository, then run the following command in project root:
 
 ```bash
 npm run dev
 # or
 yarn dev
 ```
-Visit [http://localhost:3000](http://localhost:3000) for the application. Edit `app/page.tsx` for live updates.
+Visit [http://localhost:3000](http://localhost:3000) for the application.
 
 ## Deployment
 
