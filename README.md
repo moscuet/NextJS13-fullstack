@@ -12,8 +12,9 @@
 # Text Similarity API App
 
 This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14
-Check it out at <a href="https://movie-web.app"><kbd>movie-web.app</kbd></a>. 
-[Access the Live App](https://textsimilarityapi-eight.vercel.app/)
+Check it out at [Text Similarity API](https://textsimilarityapi-eight.vercel.app/)
+
+<br/>
 
 ## 🔥Features
 
@@ -25,14 +26,18 @@ Check it out at <a href="https://movie-web.app"><kbd>movie-web.app</kbd></a>.
 - Design & UX: Material-UI, Tailwind CSS Animate, next-themes for Dark Mode.
 - Utilities: tailwind-merge, clsx, class-variance-authority.
 
+<br/>
+
 ##  📖 Project Story
 The app focuses on delivering a minimalistic yet powerful tool for textual analysis, ensuring user-friendly interaction and efficient performance.
 
+<br/>
 
 ## ⚠️ Limitations
 -  request limit 10/hour
 -  only google authentication available now
 
+<br/>
 
 # 🧬 Running locally for development
 
