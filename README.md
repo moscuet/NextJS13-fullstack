@@ -11,6 +11,8 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=nextjs,ts,prisma" />
   <br/>
+  <a href="https://movie-web.app"><kbd>🟢 website</kbd></a>
+    <br/>
   <span>OpenAI</span> | <span>Google Authentication</span>
 </p>
 
