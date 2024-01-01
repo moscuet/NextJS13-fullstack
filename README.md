@@ -18,6 +18,10 @@ Check it out at [Text Similarity API](https://textsimilarityapi-eight.vercel.app
 <br/>
 
 ## 🔥Features
+- Google Authentication: Secure login to create a personal API key.
+- API Key Management: Users can create, recreate, or revoke their API keys.
+- Text Similarity Analysis: Utilize the API to compare the similarity between two pieces of text.
+- User Dashboard: View and manage request history.
 
 ## 🛠 Tech Stack
 - Front-End: Next.js 14, Tailwind CSS, Radix UI Primitives, next/font, Lucide Icons, Framer Motion.
