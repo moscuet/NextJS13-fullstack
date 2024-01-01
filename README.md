@@ -9,9 +9,11 @@
 
 <br/>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,ts,openai,google,prisma" />
+  <img src="https://skillicons.dev/icons?i=nextjs,ts,prisma" />
   <br/>
+  <span>OpenAI</span> | <span>Google Authentication</span>
 </p>
+
 
 <br/>
 
