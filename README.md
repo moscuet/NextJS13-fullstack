@@ -1,18 +1,9 @@
 
-<p align="center"><img align="center" width="280" src="./.github/logo-dark.svg#gh-dark-mode-only"/></p>
-<p align="center"><img align="center" width="280" src="./.github/logo-light.svg#gh-light-mode-only"/></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,vite,ts" />
-  <br/>
-  <a href="https://textsimilarityapi-eight.vercel.app"><kbd>🟢 website</kbd></a>
-</p>
-
-<br/>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=nextjs,ts,prisma" />
-  <br/>
+  <br/> <br/>
   <a href="https://movie-web.app"><kbd>🟢 website</kbd></a>
-    <br/>
+    <br/> <br/>
   <span>OpenAI</span> | <span>Google Authentication</span>
 </p>
 
