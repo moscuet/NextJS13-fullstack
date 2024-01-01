@@ -42,8 +42,8 @@ The app focuses on delivering a minimalistic yet powerful tool for textual analy
 <br/>
 
 ## ⚠️ Limitations
--  request limit 10/hour
--  only google authentication available now
+-  Request limit 10/hour.
+-  Only google authentication available now.
 
 <br/>
 
