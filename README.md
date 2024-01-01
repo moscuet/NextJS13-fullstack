@@ -1,6 +1,6 @@
 # Text Similarity API App
 
-This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14. 
+This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14.  It integrates Google authentication through NextAuth.js. Backend operations are powered by Prisma with a Planetscale database, and performance is optimized using Upstash Redis and rate limiting. The user interface combines the elegance of @mui/material with the functionality of @radix-ui.
 
 ## Features
 - Front-End: Next.js 14, Tailwind CSS, Radix UI Primitives, next/font, Lucide Icons, Framer Motion.
