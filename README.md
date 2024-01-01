@@ -4,8 +4,9 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=react,vite,ts" />
   <br/>
-  <a href="https://discord.movie-web.app"><kbd>🔵 discord</kbd></a> <a href="https://movie-web.app"><kbd>🟢 website</kbd></a>
+  <a href="https://textsimilarityapi-eight.vercel.app"><kbd>🟢 website</kbd></a>
 </p>
+
 <br/><br/>
 
 
