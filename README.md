@@ -1,3 +1,14 @@
+
+<p align="center"><img align="center" width="280" src="./.github/logo-dark.svg#gh-dark-mode-only"/></p>
+<p align="center"><img align="center" width="280" src="./.github/logo-light.svg#gh-light-mode-only"/></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,vite,ts" />
+  <br/>
+  <a href="https://discord.movie-web.app"><kbd>🔵 discord</kbd></a> <a href="https://movie-web.app"><kbd>🟢 website</kbd></a>
+</p>
+<br/><br/>
+
+
 # Text Similarity API App
 
 This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14
