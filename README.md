@@ -39,7 +39,7 @@ The app focuses on delivering a minimalistic yet powerful tool for textual analy
 
 <br/>
 
-# 🧬 Running locally for development
+# 🧬 Running  in local environment
 
 First clone the repository, then run the following command in project root:
 
