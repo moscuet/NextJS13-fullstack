@@ -7,6 +7,7 @@
   <span>OpenAI</span> | <span>Google Authentication</span>
 </p>
 <br/> <br/> 
+
 # Text Similarity API App
 
 This App is a full-stack application designed to compare and determine the similarity between two texts, developed using Next.js 14
