@@ -22,7 +22,7 @@ const SignInButton: FC<{ isActive: boolean }> = ({ isActive }) => {
         })
      }
    }
-   return <Button onClick={signInWithGoogle} isLoading={isLoading} isActive={isActive} >Sign in</Button>
+   return <Button onClick={signInWithGoogle} isLoading={isLoading} variant={'outline'} size={'fit'} isActive={isActive} >Sign in</Button>
 
 }
 

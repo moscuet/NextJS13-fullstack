@@ -13,8 +13,8 @@ const buttonVariants = cva(
           destructive: 
             'bg-red-600 text-white hover:bg-red-700 dark:bg-red-500 dark:hover:bg-red-600',
           outline:
-            'bg-indigo-500 text-white hover:bg-indigo-600 dark:bg-indigo-300 dark:text-slate-800 dark:hover:bg-indigo-400 border border-indigo-500 dark:border-indigo-300',
-          subtle:
+          'bg-transparent text-indigo-500 relative overflow-hidden hover:after:w-full dark:text-indigo-300 transform hover:scale-105 transition-transform ease-in-out duration-300 after:content-[""] after:block after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-indigo-500 after:transition-all rounded-none'
+          ,          subtle:
             'bg-sky-400 text-white hover:bg-sky-500 dark:bg-sky-300 dark:text-slate-800 dark:hover:bg-sky-400',
           ghost:
             'bg-transparent hover:bg-indigo-100 dark:hover:bg-indigo-700 text-indigo-500 dark:text-indigo-300',
@@ -27,9 +27,10 @@ const buttonVariants = cva(
           sm: 'h-9 px-2 rounded-md',
           md: 'h-10 py-2 px-2',
           lg: 'h-11 px-8 rounded-md',
+          fit:'px-0 py-1 mx-2'
         },
         isActive: {
-          true: 'bg-indigo-600 dark:bg-indigo-400', 
+          true: 'after:w-full', 
           false: ''
         },
       },

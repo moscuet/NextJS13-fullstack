@@ -20,7 +20,7 @@ const DashboardNavLink = ({ session }: { session: boolean }) => {
 
       <Link
         href={"/"}
-        className={buttonVariants({ variant: 'default', size: 'wide', isActive: currentRoute === '/' })}
+        className={buttonVariants({ variant: 'outline', size:'fit', isActive: currentRoute === '/' })}
       >
         Home
       </Link>
@@ -28,7 +28,7 @@ const DashboardNavLink = ({ session }: { session: boolean }) => {
       <Link
         onClick={handleDashboardClick}
         href={"/dashboard"}
-        className={buttonVariants({ variant: 'default', size: 'md', isActive: currentRoute === '/dashboard' })}
+        className={buttonVariants({ variant: 'outline', size: 'fit', isActive: currentRoute === '/dashboard' })}
       >
         Dashboard
 
@@ -37,8 +37,8 @@ const DashboardNavLink = ({ session }: { session: boolean }) => {
       <Link
         href='/documentations'
         className={`${buttonVariants({
-          variant: 'default',
-          size: 'md',
+          variant: 'outline',
+          size: 'fit',
           isActive: currentRoute === '/documentations'
         })}`}
       >
