@@ -26,7 +26,7 @@ export default function RootLayout({
           <Providers>
             <Navbar />
             <Toaster position='bottom-right' />
-            <main> {/* Adjust top padding to account for navbar height */}
+            <main> 
               {children}
             </main>
           </Providers>
