@@ -45,6 +45,17 @@ const DashboardNavLink = ({ session }: { session: boolean }) => {
         Documentation
       </Link>
 
+      <Link
+        href='/test'
+        className={`${buttonVariants({
+          variant: 'outline',
+          size: 'fit',
+          isActive: currentRoute === '/test'
+        })}`}
+      >
+        Test
+      </Link>
+
       {session ? (
         <>
           <SignOutButton />
