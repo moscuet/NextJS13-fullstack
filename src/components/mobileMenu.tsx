@@ -4,7 +4,6 @@ import { Home, FileText, LogIn, LogOut, Info, LayoutDashboard, Loader2, Menu, Us
 import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import { useState } from 'react'
-import { Button } from './ui/Button'
 
 import {
     DropdownMenu,

@@ -3,9 +3,8 @@ import { ChangeEvent, FC, useState } from "react";
 import axios from "axios";
 import { Button, CircularProgress } from "@mui/material";
 
-const page = () => {
- 
-    const [text1, setText1] = useState("");
+const Page = () => {
+  const [text1, setText1] = useState("");
   const [text2, setText2] = useState("");
   const [similarity, setSimilarity] = useState<null | number>(null);
   const [errorMessage, setErrorMessage] = useState("");
@@ -20,14 +19,13 @@ const page = () => {
         text1,
         text2,
       });
-if(data.error){
-    setErrorMessage(data.error || "An unexpected error occurred");
-    setSimilarity(null);
-}
-else{
-    setSimilarity(Number((data.similarity * 100).toFixed(2)));
-    setErrorMessage("");
-}
+      if (data.error) {
+        setErrorMessage(data.error || "An unexpected error occurred");
+        setSimilarity(null);
+      } else {
+        setSimilarity(Number((data.similarity * 100).toFixed(2)));
+        setErrorMessage("");
+      }
     } finally {
       setLoading(false);
     }
@@ -102,20 +100,21 @@ else{
         </div>
 
         <Button
-  disabled={!text1 || !text2 || loading}
-  onClick={handleSubmit}
-  className="px-6 my-2 py-2 rounded shadow bg-indigo-600 hover:bg-indigo-600 transition-colors"
-  startIcon={
-    loading ? <CircularProgress size={20} style={{ color: '#ffffff' }} /> : null
-  }
-  style={{ color: 'white', borderColor: 'white' }}
->
-  {loading ? "Checking..." : "Check Similarity"}
-</Button>
-
+          disabled={!text1 || !text2 || loading}
+          onClick={handleSubmit}
+          className="px-6 my-2 py-2 rounded shadow bg-indigo-600 hover:bg-indigo-600 transition-colors"
+          startIcon={
+            loading ? (
+              <CircularProgress size={20} style={{ color: "#ffffff" }} />
+            ) : null
+          }
+          style={{ color: "white", borderColor: "white" }}
+        >
+          {loading ? "Checking..." : "Check Similarity"}
+        </Button>
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;
