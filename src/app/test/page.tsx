@@ -2,6 +2,7 @@
 import { ChangeEvent, FC, useState } from "react";
 import axios from "axios";
 import { Button, CircularProgress } from "@mui/material";
+import { CheckIcon } from "lucide-react";
 
 const Page = () => {
   const [text1, setText1] = useState("");
@@ -79,7 +80,8 @@ const Page = () => {
         )}
 
         <div className="sm:flex gap-4 my-4 w-full max-w-2xl">
-          <div className="flex-1">
+          <div className="flex-1 mb-4">
+            <p className="font-bold text-md mb-2 pl-1">First Text</p>
             <textarea
               className="w-full p-2 rounded shadow border-none outline-none dark:bg-gray-700"
               rows={10}
@@ -88,7 +90,8 @@ const Page = () => {
               onChange={handleInputChange(setText1)}
             />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 mb-4">
+          <p className="font-bold text-md mb-2 pl-1">Second Text</p>
             <textarea
               className="w-full p-2 rounded shadow border-none outline-none dark:bg-gray-700"
               rows={10}
@@ -99,19 +102,19 @@ const Page = () => {
           </div>
         </div>
 
-        <Button
-          disabled={!text1 || !text2 || loading}
-          onClick={handleSubmit}
-          className="px-6 my-2 py-2 rounded shadow bg-indigo-600 hover:bg-indigo-600 transition-colors"
-          startIcon={
-            loading ? (
-              <CircularProgress size={20} style={{ color: "#ffffff" }} />
-            ) : null
-          }
-          style={{ color: "white", borderColor: "white" }}
-        >
-          {loading ? "Checking..." : "Check Similarity"}
-        </Button>
+        <button
+      disabled={!text1 || !text2 || loading}
+      onClick={handleSubmit}
+      className="px-6 my-2 py-2 rounded shadow bg-indigo-600 hover:bg-indigo-600 transition-colors flex items-center"
+      style={{ color: "white", borderColor: "white" }}
+    >
+      {loading ? (
+        <CircularProgress size={20} style={{ color: "#ffffff" }} />
+      ) : (
+        <CheckIcon className="h-5 w-5 mr-1" /> 
+      )}
+      {loading ? "Checking..." : "Check Similarity"}
+    </button>
       </div>
     </div>
   );
