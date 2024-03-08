@@ -4,7 +4,8 @@ import axios from "axios";
 import { Button, CircularProgress } from "@mui/material";
 
 const page = () => {
-  const [text1, setText1] = useState("");
+ 
+    const [text1, setText1] = useState("");
   const [text2, setText2] = useState("");
   const [similarity, setSimilarity] = useState<null | number>(null);
   const [errorMessage, setErrorMessage] = useState("");
