@@ -31,7 +31,7 @@ export default function Home() {
 
               <Paragraph className='mx-auto max-w-xl mb-6 text-center lg:text-left'>
                 With the Text Similarity API, you can easily determine the
-                similarity between two pieces of text with a free{' '}
+                similarity between two pieces of text with a free
                 <Link
                   href='/login'
                   className='underline underline-offset-2 text-black dark:text-dark-indigo'>
